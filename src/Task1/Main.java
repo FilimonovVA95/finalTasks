@@ -82,5 +82,12 @@ public class Main {    //В условии опечатка - у класса б
         assert salaries.get(salary1.getTo()).equals(Arrays.asList(1)): "wrong salaries mailbox content (1)";
         assert salaries.get(salary2.getTo()).equals(Arrays.asList(Integer.MAX_VALUE)): "wrong salaries mailbox content (2)";
         assert salaries.get(randomTo).equals(Arrays.asList(randomSalary)): "wrong salaries mailbox content (3)";
+
+        System.out.println(mailService.getMailBox());
+        System.out.println();
+        System.out.println(salaryService.getMailBox());
+
+
+
     }
 }

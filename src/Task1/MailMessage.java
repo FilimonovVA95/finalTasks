@@ -1,6 +1,6 @@
 package Task1;
 
-public class MailMessage extends Message{
+public class MailMessage extends Message <String>{
 
     private String from;
     private String to;
@@ -12,18 +12,19 @@ public class MailMessage extends Message{
         this.content = content;
     }
 
-    public String getFrom() {
-        return from;
-    }
 
+    @Override
     public String getTo() {
         return to;
     }
 
+    @Override
+    public String getFrom() {
+        return from;
+    }
+
+    @Override
     public String getContent() {
         return content;
     }
-
-
-
 }
