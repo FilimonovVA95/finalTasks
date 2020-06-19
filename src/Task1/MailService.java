@@ -19,7 +19,7 @@ public class MailService <T> implements Consumer<Message> {
      * Почтовый ящик. Содержит все сообщения\посылки, отправленные конкретному получателю(ключ)
      *
      * Переопределен метод .get для получения пустого списка сообщений,
-     * при запросе сообщения\посылки для неизветсного получателя
+     * при запросе сообщения\посылки для неизвестного получателя
      */
     /** ENG
      * Mailbox. Contains all messages\parcel sent to specific recipient(key)
@@ -34,11 +34,11 @@ public class MailService <T> implements Consumer<Message> {
         }
     };
 
-    /**
+    /** RUS
      * Добавление сообщения\посылки в почтовый ящик
      * @param message сообщение\посылка
      */
-    /**
+    /** ENG
      * Add a messages\parcel to the mailbox
      * @param message messages\parcel
      */

@@ -16,11 +16,11 @@ import java.util.Map;
 public class Main {    //В условии опечатка - у класса были круглые скобки
     /** RUS
      * Точка входа
-     * @param args массив строк аргументов программы
+     * @param args массив строк аргументов командной строки
      */
     /** ENG
-     * Entry point.
-     * @param args array of string with program arguments
+     * Entry point
+     * @param args array of strings with program arguments
      */
     public static void main(String[] args) {
         String randomFrom = "fromString"; //Любая случайная строка.
