@@ -5,11 +5,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-
 public class Main {    //В условии опечатка - у класса были круглые скобки
     public static void main(String[] args) {
-        String randomFrom = "..."; //Любая случайная строка.
-        String randomTo = "...";  //Любая случайная строка.
+        String randomFrom = "fromString"; //Любая случайная строка.
+        String randomTo = "toString";  //Любая случайная строка.
         int randomSalary = 100; //Любое случайное число.
 
         MailMessage firstMessage = new MailMessage(
@@ -82,6 +81,5 @@ public class Main {    //В условии опечатка - у класса б
         assert salaries.get(salary1.getTo()).equals(Arrays.asList(1)): "wrong salaries mailbox content (1)";
         assert salaries.get(salary2.getTo()).equals(Arrays.asList(Integer.MAX_VALUE)): "wrong salaries mailbox content (2)";
         assert salaries.get(randomTo).equals(Arrays.asList(randomSalary)): "wrong salaries mailbox content (3)";
-
     }
 }
