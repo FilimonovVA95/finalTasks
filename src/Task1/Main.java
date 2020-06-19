@@ -5,7 +5,23 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+/** RUS
+ * Учебная задача. Класс для работы с почтовым сервисом
+ * @author Филимонов Виктор (FilimonovVA.95@mail.ru)
+ */
+/** ENG
+ * Training program. Class for working with the mail service
+ * @author Filimonov Victor (FilimonovVA.95@mail.ru)
+ */
 public class Main {    //В условии опечатка - у класса были круглые скобки
+    /** RUS
+     * Точка входа
+     * @param args массив строк аргументов программы
+     */
+    /** ENG
+     * Entry point.
+     * @param args array of string with program arguments
+     */
     public static void main(String[] args) {
         String randomFrom = "fromString"; //Любая случайная строка.
         String randomTo = "toString";  //Любая случайная строка.
@@ -47,7 +63,6 @@ public class Main {    //В условии опечатка - у класса б
 // Получение "почтового ящика",
 //   где по получателю можно получить список сообщений, которые были ему отправлены
         Map<String, List<String>> mailBox = mailService.getMailBox();
-
 
 //Проверка почтового ящика
         assert mailBox.get("H.P. Lovecraft").equals(
