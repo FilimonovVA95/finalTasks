@@ -13,7 +13,7 @@ import java.util.function.Consumer;
  * @param <T> messages\parcel filling type
  * @see Task1.Message
  */
-public class MailService <T> implements Consumer<Message> {
+public class MailService <T> implements Consumer<Message<T>> {
 
     /** RUS
      * Почтовый ящик. Содержит все сообщения\посылки, отправленные конкретному получателю(ключ)
