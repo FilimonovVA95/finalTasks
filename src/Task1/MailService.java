@@ -43,12 +43,12 @@ public class MailService <T> implements Consumer<Message<T>> {
      * @param message messages\parcel
      */
     @Override
-    public void accept(Message message) {
+    public void accept(Message<T> message) {
 
         if (!mailBox.containsKey(message.getTo()))
             mailBox.put(message.getTo(), new ArrayList<>());
 
-        mailBox.get(message.getTo()).add((T) message.getContent());
+        mailBox.get(message.getTo()).add(message.getContent());
     }
 
     /** RUS
